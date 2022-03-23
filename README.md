@@ -6,6 +6,12 @@
 
 A HERE [credential file](https://platform.here.com/management/projects).  
 
+## Install
+
+```bash
+$ pip install here_oauth
+```
+
 ## Usage
 
 ```python
