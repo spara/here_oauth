@@ -4,7 +4,7 @@
 
 ## Requirements
 
-A HERE [credential file](https://platform.here.com/management/projects).  
+A HERE [credential file](https://developer.here.com/tutorials/how-to-authenticate-with-here-oauth/#generating-here-oauth-credentials).  
 
 ## Install
 
