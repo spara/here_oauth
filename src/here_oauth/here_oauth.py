@@ -40,11 +40,11 @@ def get_token(file):
     oauth_timestamp = str(int(time.time()))
     oauth_signature_method = 'HMAC-SHA256'
     oauth_version = '1.0'
-    url = 'https://account.api.here.com/oauth2/token'
 
     credentials = get_credentials(file)
     oauth_consumer_key = credentials.get('here.access.key.id')
     access_key_secret = credentials.get('here.access.key.secret')
+    url = credentials.get('here.token.endpoint.url')
 
     parameter_string = create_parameter_string(grant_type, oauth_consumer_key,oauth_nonce,oauth_signature_method,oauth_timestamp,oauth_version)
     encoded_parameter_string = urllib.parse.quote(parameter_string, safe='')
